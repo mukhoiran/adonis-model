@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {{ style('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css') }}
+    <title>Adonis 4.1</title>
+  </head>
+  <body>
+    @include('inc/navbar')
+    <div class="container">
+      @!section('content')
+    </div>
+
+    {{ script('https://code.jquery.com/jquery-3.2.1.slim.min.js') }}
+    {{ script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js') }}
+    {{ script('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') }}
+  </body>
+</html>
